@@ -35,7 +35,7 @@ const App = () => {
 
   return (
     <>
-      <Navbar />
+      <Navbar cartItems={cartItems}/>
       <main className="main-wrapper">
         <Routes>
           <Route path="/" element={<Home />} />

@@ -16,7 +16,7 @@ import { MdOutlineKeyboardArrowDown } from "react-icons/md";
 import "./Navbar.css"
 import { useState } from "react";
 
-const Navbar = () => {
+const Navbar = ({cartItems}) => {
     const [navtoggle,setNavtoggle]=useState(false)
     return (
         <>
@@ -46,7 +46,7 @@ const Navbar = () => {
                                 <ul className="nav-ul-1-wrapper justify-content-end">
                                     <li className="nav-item"><a href="" className="nav-link"><FaRegUser/></a></li>
                                     {/* <li className="nav-item"><a href="" className="nav-link"><FaRegHeart/></a></li> */}
-                                    <li className="nav-item"><Link to="/cart" className="nav-link"><CgShoppingBag/></Link></li>
+                                    <li className="nav-item"><Link to="/cart" className="nav-link"><CgShoppingBag/>{cartItems.length>0 && <span className="dot"></span>}</Link></li>
                                     <li className="nav-item"><a href="" className="nav-link"><IoSearchSharp/></a></li>
                                 </ul>
                             </div>
