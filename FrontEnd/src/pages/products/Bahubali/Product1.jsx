@@ -25,6 +25,7 @@ import workouts from "../../../assets/images/bahubali/workouts.jpg"
 import needed from "../../../assets/images/bahubali/needed.jpg"
 import intimacy from "../../../assets/images/bahubali/intimacy.jpg"
 import dressing from "../../../assets/images/bahubali/dressing.jpg"
+import bannerBg from "../../../assets/images/bahubali/banana-banner.png";
 
 
 
@@ -79,7 +80,7 @@ const usageInstructions = [
 ];
 
 
-function Product1() {
+function Product1({addToCart }) {
   return (
     <>
     <section className='bahubali-product'>
@@ -148,7 +149,7 @@ function Product1() {
       </div>
 
     </section>
-    <section className='bahu-product-sec3 bg-added'>
+    <section className="bahu-product-sec3 bg-added" style={{ backgroundImage: `url(${bannerBg})` }}>
       <div className='row'>
         <div className="col-md-3 d-flex align-items-start ps-5 swipe-text">
         <h2 className="text-uppercase">Men’s Intimate Mist <br></br> Spray Cares for Your</h2>
@@ -224,7 +225,7 @@ function Product1() {
       </div>
 
     </section>
-    <section className='bahu-product-sec5 bg-added'>
+    <section className='bahu-product-sec5 bg-added' style={{ backgroundImage: `url(${bannerBg})` }}>
         <div className='container'>
           <h2 className='section-title text-center text-uppercase'>Unleash Freshness: Benefits & Uses</h2>
           <div className='row'>
@@ -259,12 +260,13 @@ function Product1() {
 
 
       <section className='bahu-product-sec6'>
-      <Spray 
+      <Spray
         images={[spray, mist]}
         title="Men Intimate Mist Spray – Bahubali"
         description="Introducing the ultimate hygiene solution for modern men. Formulated with lactic acid, tea tree oil, aloe vera extract, chamomile extract, and menthol, ensuring freshness and odor control."
         price={441}
         oldPrice={500}
+        addToCart={addToCart}
       />
 
 

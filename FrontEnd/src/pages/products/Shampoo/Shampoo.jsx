@@ -5,7 +5,7 @@ import clipboard from "../../../assets/images/shampoo/clipboard.png"
 import shampoo1 from "../../../assets/images/shampoo/shampoo-1.png"
 import shampp02 from "../../../assets/images/shampoo/shamppo-2.png"
 import Spray from "../../../components/Bahubali/Spray"
-function Shampoo() {
+function Shampoo({addToCart}) {
   return (
   <>
   <section>
@@ -139,7 +139,8 @@ function Shampoo() {
           title="Chanakya Care Shampoo"
           description="Let Kids be champions with the right Shampoo because strong hair, healthy scalps and confidence start at an early age."
           price={541}
-          oldPrice={600}>
+          oldPrice={600}    addToCart={addToCart}>
+          
 
         </Spray>
     </section>

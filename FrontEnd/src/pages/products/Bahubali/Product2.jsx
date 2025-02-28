@@ -11,13 +11,13 @@ import foam1 from "../../../assets/images/bahubali/foam-1.png"
 import selfconfidence from "../../../assets/images/bahubali/self_confidence.jpg";
 import foam2 from "../../../assets/images/bahubali/foam-2.jpg"
 
-import seven from "../../../assets/images/bahubali/pH balance.jpg"
-import one from "../../../assets/images/bahubali/sweat.jpg";
-import two from "../../../assets/images/bahubali/odor.jpg";
-import three from "../../../assets/images/bahubali/non.jpg";
-import four from "../../../assets/images/bahubali/oil.jpg"
-import five from "../../../assets/images/bahubali/protection.jpg"
-import six from "../../../assets/images/bahubali/hygiene.jpg"
+// import seven from "../../../assets/images/bahubali/pH balance.jpg"
+// import one from "../../../assets/images/bahubali/sweat.jpg";
+// import two from "../../../assets/images/bahubali/odor.jpg";
+// import three from "../../../assets/images/bahubali/non.jpg";
+// import four from "../../../assets/images/bahubali/oil.jpg"
+// import five from "../../../assets/images/bahubali/protection.jpg"
+// import six from "../../../assets/images/bahubali/hygiene.jpg"
 import Shake from "../../../assets/images/bahubali/Shake.jpg"
 import distance from "../../../assets/images/bahubali/distance.jpg"
 import workouts from "../../../assets/images/bahubali/workouts.jpg"
@@ -25,6 +25,7 @@ import workouts from "../../../assets/images/bahubali/workouts.jpg"
 import needed from "../../../assets/images/bahubali/needed.jpg"
 import intimacy from "../../../assets/images/bahubali/intimacy.jpg"
 import dressing from "../../../assets/images/bahubali/dressing.jpg"
+import bannerBg from "../../../assets/images/bahubali/banana-banner.png";
 
 
 
@@ -73,7 +74,7 @@ const usageInstructions = [
 ];
 
 
-function Product2() {
+function Product2({addToCart}) {
   return (
     <>
     <section className='bahubali-product'>
@@ -143,7 +144,7 @@ function Product2() {
       </div>
 
     </section>
-    <section className='bahu-product-sec3 bg-added'>
+    <section className='bahu-product-sec3 bg-added' style={{ backgroundImage: `url(${bannerBg})` }}>
       <div className='row'>
      
 
@@ -222,7 +223,7 @@ function Product2() {
       </div>
 
     </section>
-    <section className='bahu-product-sec5 bg-added'>
+    <section className='bahu-product-sec5 bg-added' style={{ backgroundImage: `url(${bannerBg})` }}>
         <div className='container'>
           <h2 className='section-title text-center text-uppercase'>How to Use</h2>
           <div className='row'>
@@ -248,6 +249,7 @@ function Product2() {
         description="Men’s Intimate Foaming Wash is specially formulated to maintain hygiene, freshness, and confidence. Enriched with Lactic Acid, Tea Tree Oil, Seabuckthorn Oil, Cranberry Extract, and Aloe Vera, it gently cleanses while preventing odor, irritation, and infections. With a refreshing banana fragrance, this pH-balanced formula ensures all-day comfort."
         price={450}
         oldPrice={550}
+        addToCart={addToCart}
       />
 
 
