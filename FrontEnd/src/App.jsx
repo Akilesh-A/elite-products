@@ -7,6 +7,7 @@ import Products from "./pages/products/Products";
 import Product1 from "./pages/products/Bahubali/Product1";
 import Shampoo from "./pages/products/Shampoo/Shampoo";
 import Product2 from "./pages/products/Bahubali/Product2";
+import Facewash from "./pages/products/Facewash/Facewash";
 import Cart from "./components/Cart/Cart";
 
 import { Routes, Route } from "react-router-dom";
@@ -45,6 +46,7 @@ const App = () => {
           <Route path="/products/men-intimate-mist" element={<Product1 addToCart={addToCart} />} />
           <Route path="/products/channakya-shampoo" element={<Shampoo addToCart={addToCart}/>} />
           <Route path="/products/men-intimate-foam" element={<Product2 addToCart={addToCart}/>} />
+          <Route path="/products/facewash" element={<Facewash addToCart={addToCart}/>} />
           <Route path="/cart" element={<Cart cartItems={cartItems} setCartItems={setCartItems} />} />
         </Routes>
       </main>

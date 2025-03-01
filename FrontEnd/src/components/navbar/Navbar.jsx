@@ -27,13 +27,13 @@ const Navbar = ({cartItems}) => {
                             <div className="col-md-3 col-5">
                                 <Link to="/" ><img src={logo} alt="logo" width="160px"/></Link>
                             </div>
-                            <div className="col-md-5 d-md-block d-none">
+                            <div className="col-lg-5 col-md-6 d-md-block d-none">
                                 <ul className="nav-ul-1-wrapper">
                                     <li className="nav-item"><NavLink to="/" className="nav-link">Home</NavLink></li>
                                     <li className="nav-item dropdown-li"><Link to="" className="nav-link">Products <MdOutlineKeyboardArrowDown/></Link>
                                             <ul  className="nav-mob-p-ul ul-dropdown">
                                             <li className="nav-item"><Link to="/products/channakya-shampoo" className="nav-link">Chanakya Care Shampoo</Link></li>
-                                                <li className="nav-item"><Link to="" className="nav-link">Charcoal face wash</Link></li>
+                                                <li className="nav-item"><Link to="/products/facewash" className="nav-link">Charcoal face wash</Link></li>
                                                 <li className="nav-item"><Link to="/products/men-intimate-mist" className="nav-link">Men Intimate Mist Spray </Link></li>
                                                 <li className="nav-item"><Link to="/products/men-intimate-foam" className="nav-link">Men’s Intimate Foaming Wash </Link></li>
                                             </ul>
@@ -42,7 +42,7 @@ const Navbar = ({cartItems}) => {
                                     <li className="nav-item"><NavLink to="/contact" className="nav-link">Contact</NavLink></li>
                                 </ul>
                             </div>
-                            <div className="col-md-4 d-md-block d-none">
+                            <div className="col-lg-4 col-md-3 d-md-block d-none">
                                 <ul className="nav-ul-1-wrapper justify-content-end">
                                     <li className="nav-item"><a href="" className="nav-link"><FaRegUser/></a></li>
                                     {/* <li className="nav-item"><a href="" className="nav-link"><FaRegHeart/></a></li> */}
@@ -64,7 +64,7 @@ const Navbar = ({cartItems}) => {
                                             <li className="nav-item dropdown-li"><Link to="" className="nav-link">Products <MdOutlineKeyboardArrowDown/></Link>
                                                 <ul  className="nav-mob-p-ul ul-dropdown">
                                                 <li className="nav-item"><Link to="/products/channakya-shampoo" className="nav-link">Chanakya Care Shampoo</Link></li>
-                                                <li className="nav-item"><Link to="" className="nav-link">Charcoal face wash</Link></li>
+                                                <li className="nav-item"><Link to="/products/facewash" className="nav-link">Charcoal face wash</Link></li>
                                                 <li className="nav-item"><Link to="/products/men-intimate-mist" className="nav-link">Men Intimate Mist Spray </Link></li>
                                                 <li className="nav-item"><Link to="/products/men-intimate-foam" className="nav-link">Men’s Intimate Foaming Wash </Link></li>
                                                 </ul>
